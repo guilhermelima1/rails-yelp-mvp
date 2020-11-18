@@ -1,0 +1,9 @@
+<h1>Reviews List</h1>
+<hr>
+<ul>
+  <% @restaurant.reviews.each do |review| %>
+    <li><%= review.content %></li>  
+  <% end %>
+</ul>
+<hr>
+<%= link_to 'Back to Home', restaurants_path %>
